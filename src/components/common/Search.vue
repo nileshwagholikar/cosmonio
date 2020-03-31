@@ -1,7 +1,7 @@
 <template>
   <div class="searchForm">
     <div v-if="showLogo" class="item">
-      <img src="../../assets/logo.png" class="logo" alt="Dorecce" />
+      <img src="../../assets/logo.png" class="logo" alt="Cosmonio" />
     </div>
     <div class="item">
       <div class="form-input">

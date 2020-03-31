@@ -1,4 +1,4 @@
-# dorecce
+# Cosmonio
 
 ## Project setup
 ```
