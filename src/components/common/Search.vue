@@ -1,9 +1,6 @@
 <template>
   <div class="searchForm">
-    <div v-if="showLogo" class="item">
-      <img src="../../assets/logo.png" class="logo" alt="Cosmonio" />
-    </div>
-    <div class="item">
+    <div class="d-flex justify-content-center">
       <div class="form-input">
         <input
           type="text"
@@ -11,23 +8,46 @@
           id="s-property"
           class="input input-block"
           placeholder=" "
+          v-model="keyword"
         />
         <label for="s-property" class="p-float-label">Search</label>
       </div>
-      <div class="form-button">
-        <button class="btn btn-primary btn-block">Search</button>
-      </div>
+      <span v-if="keyword.length < 3" class="note"
+        >Please enter minimum 3 letters for search</span
+      >
     </div>
   </div>
 </template>
 
 <script>
+import { mapState, mapMutations } from "vuex";
+
 export default {
   props: {
     showLogo: {
       type: Boolean,
       require: false
     }
+  },
+  computed: {
+    ...mapState({
+      searchedKeyword: state => {
+        return state.search.searchedKeyword;
+      }
+    }),
+    keyword: {
+      get() {
+        return this.searchedKeyword;
+      },
+      set(val) {
+        this.updateSearchedKeyword(val);
+      }
+    }
+  },
+  methods: {
+    ...mapMutations({
+      updateSearchedKeyword: "search/updateSearchedKeyword"
+    })
   }
 };
 </script>

@@ -1,0 +1,31 @@
+.image-popup {
+  display: block !important;
+  padding: 15px;
+}
+.image-popup .popup-header {
+  height: 70px;
+  line-height: 70px;
+}
+.image-popup .popup-header h1 {
+  padding: 0;
+  border: none;
+}
+.image-popup .popup-content {
+  height: calc(100vh - 70px);
+}
+.image-popup .popup-content .center-canves {
+  position: relative;
+  width: 70%;
+  max-height: calc(100vh - 100px);
+  background-color: #000000;
+  float: left;
+  text-align: center;
+}
+.image-popup .popup-content .center-canves canvas {
+  height: 100%;
+  max-height: calc(100vh - 100px);
+}
+.image-popup .popup-content .image-card__body {
+  float: right;
+  width: 30%;
+}

@@ -1,0 +1,75 @@
+.image-popup {
+    display: block !important;
+    padding: 15px;
+
+    .popup-header {
+        height: 70px;
+        line-height: 70px;
+
+        h1 {
+            padding: 0;
+            border: none;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            text-transform: uppercase;
+            white-space: nowrap;
+            margin-right: 70px;
+        }
+    }
+
+    .popup-content {
+        height: calc(100vh - 70px);
+
+        .center-canves {
+            position: relative;
+            width: 100%;
+            max-height: calc(100vh - 200px);
+            background-color: #000000;
+            float: left;
+            text-align: center;
+
+            @include md {
+                width: 70%;
+                max-height: calc(100vh - 100px);
+            };
+
+            .loader {
+                font-size: 22px;
+                position: absolute;
+                text-align: center;
+                color: #FFFFFF;
+                width: 200px;
+                top: 50%;
+                left: calc(50% - 100px);
+            }
+
+            canvas {
+                height: 100%;
+                max-height: calc(100vh - 200px);
+
+                @include md {
+                    max-height: calc(100vh - 100px);
+                }
+            }
+        }
+
+        .image-card__body {
+            float: right;
+            width: 100%;
+            padding: 10px 0;
+
+            .image-owner {
+                font-size: 18px;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+                border-bottom: 1px solid #ededed;
+            }
+
+            @include md {
+                padding: 0 15px;
+                width: 30%;
+            };
+        }
+                  
+    }   
+}

@@ -1,14 +1,16 @@
 <template>
-  <div id="nav" v-if="!isLoggedIn">
-    <router-link to="/home">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <a href="javascript:" @click="showLogin()">Login</a>
-    <Login></Login>
-  </div>
-  <div id="nav" v-else-if="isLoggedIn">
-    <router-link to="/home">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <a href="javascript:" @click="logout()">Logout</a>
+  <div id="nav">
+    <template v-if="!isLoggedIn">
+      <router-link to="/home">Home</router-link>
+      <router-link to="/about">About</router-link>
+      <a href="javascript:" class="last-child" @click="showLogin()">Login</a>
+      <Login></Login>
+    </template>
+    <template v-else>
+      <router-link to="/home">Home</router-link>
+      <router-link to="/about">About</router-link>
+      <a href="javascript:" class="last-child" @click="logout()">Logout</a>
+    </template>
   </div>
 </template>
 

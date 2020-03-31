@@ -1,0 +1,23 @@
+#nav {
+  text-align: right;
+  background-color: $top-navigation-background-color;
+  color: $top-navigation-text-color;
+  font-size: 14px;
+
+  a {
+    display: inline-block;
+    color: $top-navigation-text-color;
+    text-decoration: none;
+    padding: 15px 20px;
+
+
+    &.router-link-exact-active {
+      color: $primary-color;
+      border-top: 4px solid $primary-color;
+    }
+
+    &.last-child {
+      padding-right: 0;
+    }
+  }
+}

@@ -1,7 +1,12 @@
 <template>
-  <header class="banner box-shadow">
-    <Navigation></Navigation>
-    <Search showLogo></Search>
+  <header>
+    <div class="container">
+      <div class="top-bar">
+        <img src="../../assets/logo.png" class="logo" alt="Cosmonio" />
+        <Navigation></Navigation>
+      </div>
+      <Search></Search>
+    </div>
   </header>
 </template>
 

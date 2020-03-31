@@ -1,6 +1,6 @@
 <template>
-  <section class="login box-shadow">
-    <div class="close" @click="hideLogin()">X</div>
+  <section class="login popup">
+    <div class="close" @click="hideLogin()"></div>
     <form class="form d-flex" @submit.prevent="login()">
       <div class="item">
         <input
@@ -8,6 +8,7 @@
           name="email"
           id="email"
           class="input input-block"
+          autocomplete="current-email"
           placeholder=" "
           required
         />
@@ -20,6 +21,7 @@
           id="password"
           class="input input-block"
           placeholder=" "
+          autocomplete="current-password"
           required
         />
         <label for="password" class="p-float-label">Password</label>

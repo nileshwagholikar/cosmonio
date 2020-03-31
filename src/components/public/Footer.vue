@@ -1,5 +1,5 @@
 <template>
-  <footer class="fixed box-shadow">
+  <footer class="fixed">
     <div>Footer</div>
   </footer>
 </template>

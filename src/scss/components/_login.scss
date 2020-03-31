@@ -1,39 +1,19 @@
 .login {
     display: none;
     color: $text-color;
-    &.show {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    
+    .form {
         background-color: #FFFFFF;
-        z-index: $z-index-lightbox;
+        padding: 15px;
+        width: 80%;
+        max-width: 400px;
 
-        .close {
-            position: absolute;
-            right: 0;
-            top: 0;
-            padding: 10px;
+        .item {
+            margin-bottom: 10px;
         }
 
-        .form {
-            background-color: #FFFFFF;
-            padding: 15px;
-            width: 80%;
-            max-width: 400px;
-
-            .item {
-                margin-bottom: 10px;
-            }
-
-            .item:last-child {
-                margin-bottom: 0;
-            }
+        .item:last-child {
+            margin-bottom: 0;
         }
     }
 }
