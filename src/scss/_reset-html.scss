@@ -1,0 +1,23 @@
+/* CSS Reset */
+
+html, body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1;
+}
+
+html {
+    -webkit-text-size-adjust: 100%; /* 1 */
+    -ms-text-size-adjust: 100%; /* 1 */
+    -webkit-font-smoothing: antialiased;
+    overflow-y: scroll;
+}
+html {
+    color: inherit;
+}

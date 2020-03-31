@@ -1,0 +1,47 @@
+.banner {
+  height: auto;
+}
+#nav {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #000;
+  color: #ccc;
+  font-size: 14px;
+}
+#nav a {
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 5px;
+}
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+.searchForm {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+.searchForm .item {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchForm .item .logo {
+  height: 80px;
+}
+.searchForm .item .form-input {
+  flex: 4;
+  position: relative;
+}
+.searchForm .item .form-input .input {
+  border-right: none;
+  border-radius: 0.2rem 0 0 0.2rem;
+}
+.searchForm .item .form-button {
+  flex: 1;
+}
+.searchForm .item .form-button .btn {
+  border-radius: 0 0.2rem 0.2rem 0;
+}

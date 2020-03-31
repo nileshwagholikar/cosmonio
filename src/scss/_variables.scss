@@ -1,0 +1,37 @@
+$font-family-base: Avenir, Helvetica, Arial, sans-serif;
+
+/* Small tablets and large smartphones (landscape view) */
+$screen-sm-min: 576px;
+
+/* Small tablets (portrait view) */
+$screen-md-min: 768px;
+
+/* Tablets and small desktops */
+$screen-lg-min: 992px;
+
+/* Large tablets and desktops */
+$screen-xl-min: 1200px;
+
+/* Large tablets and desktops */
+$screen-xxl-min: 1400px;
+
+/* You can add global styles to this file, and also import other style files */
+$body-background: #d3d3d3;
+$header-background: #ffffff;
+$footer-background: #ffffff;
+$header-height: 80px;
+$footer-height: 40px;
+$header-z-index: 999;
+$footer-z-index: 998;
+$z-index-lightbox: 9999;
+
+$text-color: #2c3e50;
+$body-text-color: $text-color;
+$light-text-color: #d3d3d3;
+$shadow-color: rgba(0, 0, 0, 0.2);
+
+
+$primary-color: #42b983;
+$white-color: #FFFFFF;
+$top-navigation-background-color: #000000;
+$top-navigation-text-color: $light-text-color;

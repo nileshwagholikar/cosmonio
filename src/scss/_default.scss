@@ -1,0 +1,128 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body, #app, #appTemplate {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 22px;
+  color: $body-text-color;
+  font-family: $font-family-base;
+}
+
+body {
+  background-color: $body-background;
+}
+
+header {
+  height: $header-height;
+  background-color: $header-background;
+  &.fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: $header-z-index;
+  }
+}
+
+footer {
+  height: $footer-height;
+  background-color: $footer-background;
+  &.fixed {
+    line-height: $footer-height;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: $footer-z-index;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 0 5px $shadow-color;
+}
+
+input, textarea, select {
+  border: 1px solid #CCC;
+  padding: 20px 11px 4px 13px;
+  line-height: 22px;
+  font-size: 16px;
+  @include placeholder('transparent');
+  border-radius: 0.2rem;
+
+  & ~ .p-float-label {
+    display: inline-block;
+    position: absolute;
+    top: 13px;
+    z-index: 1;
+    left: 15px;
+    pointer-events: none;
+    text-overflow: ellipsis;
+    transition: all 0.2s linear;
+    line-height: 22px;
+  }
+
+  &:focus ~ .p-float-label {
+    top: 6px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &:not(:placeholder-shown) ~ .p-float-label {
+      top: 6px;
+      font-size: 12px;
+      line-height: 16px;
+  }
+
+  &:not(:-ms-input-placeholder) ~ .p-float-label {
+      top: 6px;
+      font-size: 12px;
+      line-height: 16px;
+  }
+}
+
+input[type='checkbox'], input[type='radio'] {
+  border: none;
+}
+
+.input-block, .btn-block {
+  width: 100%;
+}
+
+.btn {
+  font-size: 16px;
+  height: 48px;
+  padding: 0 20px;
+  border-radius: 0.2rem;
+
+  &.btn-primary {
+    background-color: #42b983;
+    border: 1px solid #42b983;
+    color: #FFF;    
+  }
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+
+  &.d-flex-horizontal {
+    flex-direction: row;
+  }
+
+  .item {
+    flex: 1;
+    position: relative;
+  }
+}

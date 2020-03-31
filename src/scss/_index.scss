@@ -1,0 +1,89 @@
+/* Banner  */
+$banner-xl-height: 400px;
+$banner-lg-height: 200px;
+$banner-sm-height: 150px;
+$banner-xs-height: 100px;
+
+
+
+.banner {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  #nav {
+    flex: 1;
+    text-align: center;
+    background-color: $top-navigation-background-color;
+    color: $top-navigation-text-color;
+    font-size: 14px;
+    width: 100%;
+  
+    a {
+      display: inline-block;
+      color: $top-navigation-text-color;
+      text-decoration: none;
+      padding: 5px 10px;
+  
+      &.router-link-exact-active {
+        color: $primary-color;
+      }
+    }
+  }
+  
+  .searchForm {
+    flex: 1;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include md {
+      max-width: 80%;
+    }
+
+    @include lg {
+      max-width: 60%;
+    }
+
+    @include xl {
+      max-width: 50%;
+    }
+  
+    .item {
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      .logo {
+        height: 80px;
+      }  
+  
+      .form-input {
+        flex: 4;
+        position: relative;
+  
+        .input {
+          border-right: none;
+          border-radius: 0.2rem 0 0 0.2rem;
+        }
+  
+      }
+  
+      .form-button {
+        flex: 1;
+  
+        .btn {
+          border-radius: 0 0.2rem 0.2rem 0;
+        }
+      }
+    }
+  }
+}
+
+.div-content {
+  padding: 15px;
+}
