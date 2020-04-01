@@ -28,7 +28,18 @@ const TRANSPARENT_GIF =
   "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
 
 export default {
-  props: ["image"],
+  props: {
+    image: {
+      type: Object,
+      default() {
+        return {};
+      }
+    },
+    loading: {
+      type: Boolean,
+      default: false
+    }
+  },
   filters: {
     formatDate(date) {
       return moment(date).format("MMMM Do, YYYY");

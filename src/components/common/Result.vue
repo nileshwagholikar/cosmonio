@@ -1,8 +1,8 @@
 <template>
   <div class="searchResult" v-if="searchedKeyword.length >= 3">
-    <p v-if="loading" class="text-center">
-      Loading...
-    </p>
+    <ul v-if="loading" class="image-card-grid">
+      <image-card v-for="n in 6" :key="n" :loading="true" />
+    </ul>
     <template v-else>
       <h1>Search Result for {{ searchedKeyword }}</h1>
       <ul class="image-card-grid">
