@@ -8,7 +8,6 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "postbuild": "clientlib --verbose",
     "build:modern": "vue-cli-service build --modern",
     "lint": "vue-cli-service lint",
     "sass": "sass src/scss/_all.scss src/css/all.css",
