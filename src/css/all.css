@@ -529,6 +529,13 @@ header .top-bar .logo {
   font-size: 0.8rem;
 }
 
+.image-card-loading {
+  background-color: #EEEEEE;
+  text-align: center;
+  height: 290px;
+  line-height: 290px;
+}
+
 .image-popup {
   display: block !important;
   padding: 15px;

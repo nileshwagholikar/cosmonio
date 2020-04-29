@@ -11,6 +11,9 @@
           :key="image.id"
           :image="image"
         />
+        <li class="image-card image-card-loading" v-if="calledLoading">
+          Loading more images...
+        </li>
       </ul>
       <image-popup v-if="openItem.url_n" />
     </template>
